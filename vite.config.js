@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'film-rater-backend-production.up.railway.app', // Your Express backend
+        target: 'https://film-rater-backend-production.up.railway.app', // Your Express backend
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
